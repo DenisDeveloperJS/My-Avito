@@ -1,0 +1,29 @@
+@import 'blocks/vars';
+@import 'vendor/reset';
+
+// Обнуление
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%; // Адаптивный шрифт
+}
+
+body {
+	background-color: #181818; // Стандартный задний фон
+	color: $white; // Стандартный цвет шрифта
+	font-size: 1.4rem; // Стандартный размер шрифта
+	font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto',
+		'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
+		'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+		'Noto Color Emoji'; // Подлкюченые шрифты
+	line-height: 1.5;
+}
+
+/* Blocks */

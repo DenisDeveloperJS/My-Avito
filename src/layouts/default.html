@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    {{> head }}
-</head>
-<body>
+<html lang="ru">
+	<head>
+		{{> head }}
+	</head>
+	<body>
+		<div class="page container">
+			<!-- Header -->
+			{{> header }}
 
-    {{> header }}
+			<!-- Main -->
+			<main class="main">{{> body }}</main>
+		</div>
 
-    {{> body }}
-
-    {{> footer }}
-
-    <script src="assets/js/app.js"></script>
-</body>
+		<script defer src="assets/js/app.js"></script>
+	</body>
 </html>

@@ -1,0 +1,38 @@
+.footer {
+	padding-top: 1.7rem;
+	border-top: 1px solid #e5e5e5;
+}
+.footer__copy,
+.footer__confidentiality,
+.footer__active {
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+
+	color: $secondary;
+
+	@include media($mobile-bp) {
+		font-size: 1.6rem;
+	}
+}
+
+.footer,
+.footer__first,
+.footer__second {
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__second {
+	margin-top: 1.5rem;
+
+	a {
+		font-size: 1.2rem;
+		line-height: 1.4rem;
+
+		color: $primary;
+
+		@include media($mobile-bp) {
+			font-size: 1.4rem;
+		}
+	}
+}

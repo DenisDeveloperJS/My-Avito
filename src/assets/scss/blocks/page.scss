@@ -1,0 +1,26 @@
+.page {
+	height: 100%;
+	transition: 0.3s background-color ease-in-out, 0.3s opacity ease-in-out;
+
+	&__title {
+		font-family: 'Roboto', sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 28px;
+
+		color: $primary;
+
+		margin-bottom: 2.5rem;
+
+		@include media($mobile-bp) {
+			margin-bottom: 2rem;
+			text-align: center;
+		}
+
+		&_sm {
+			font-size: 1.8rem;
+			line-height: 2.1rem;
+		}
+	}
+}

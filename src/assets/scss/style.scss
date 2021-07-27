@@ -1,5 +1,7 @@
-@import 'blocks/vars';
+@import '_vars';
+@import 'mixins';
 @import 'vendor/reset';
+@import 'vendor/font-awesome';
 
 // Обнуление
 
@@ -16,8 +18,8 @@ html {
 }
 
 body {
-	background-color: #181818; // Стандартный задний фон
-	color: $white; // Стандартный цвет шрифта
+	background-color: $white; // Стандартный задний фон
+	color: $primary; // Стандартный цвет шрифта
 	font-size: 1.4rem; // Стандартный размер шрифта
 	font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto',
 		'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif,
@@ -27,3 +29,19 @@ body {
 }
 
 /* Blocks */
+
+@import 'blocks/container';
+@import 'blocks/page';
+@import 'blocks/content';
+@import 'blocks/header';
+@import 'blocks/search';
+@import 'blocks/btn';
+@import 'blocks/nav';
+@import 'blocks/cards';
+@import 'blocks/services';
+@import 'blocks/footer';
+@import 'blocks/embed';
+@import 'blocks/goods';
+@import 'blocks/user';
+@import 'blocks/stars-group';
+@import 'blocks/burger';

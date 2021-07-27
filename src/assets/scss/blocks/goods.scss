@@ -1,0 +1,49 @@
+.goods {
+	max-width: 46rem;
+	margin-right: 3rem;
+
+	@include media($tablet-bp) {
+		margin-right: 0;
+		margin-bottom: 3rem;
+	}
+}
+.goods-title {
+	@include media($tablet-bp) {
+		text-align: center;
+	}
+}
+.goods__img {
+	border-radius: 1rem;
+	margin-bottom: 1.6rem;
+
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	object-fit: cover;
+
+	cursor: pointer;
+}
+.goods__all-photo {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	margin-bottom: 3rem;
+
+	img {
+		cursor: pointer;
+	}
+}
+
+.goods__description {
+	font-size: 1.4rem;
+	line-height: 140%;
+
+	color: $primary;
+
+	@include media($mobile-bp) {
+		font-size: 1.7rem;
+	}
+
+	padding-bottom: 5rem;
+}

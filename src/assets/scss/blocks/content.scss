@@ -1,0 +1,13 @@
+.content {
+	display: flex;
+
+	&_goods {
+		@include media($tablet-bp) {
+			align-items: center;
+			flex-direction: column;
+		}
+	}
+	@include media($mobile-bp) {
+		flex-direction: column;
+	}
+}

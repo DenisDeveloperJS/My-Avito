@@ -1,0 +1,48 @@
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	padding: 1.15em 2.1em;
+
+	background-color: $secondary;
+	cursor: pointer;
+	border: none;
+	border-radius: 5px;
+
+	font-family: inherit;
+	font-weight: normal;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+	color: $white;
+	text-decoration: none;
+
+	transition: 0.3s background-color linear;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&_blue {
+		background-color: $blue;
+
+		&:hover {
+			background-color: darken($blue, 5%);
+		}
+	}
+
+	&_aqua {
+		background-color: $aqua;
+
+		&:hover {
+			background-color: darken($aqua, 5%);
+			text-decoration: none;
+		}
+	}
+
+	&_sm {
+		padding: 1rem 1.5rem;
+	}
+
+	&_lg {
+		padding: 2rem 7rem;
+	}
+}

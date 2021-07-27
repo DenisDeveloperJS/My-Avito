@@ -1,0 +1,68 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	margin-bottom: 2.5rem;
+
+	@include media($mobile-bp) {
+		height: 0;
+	}
+}
+
+.nav__left {
+	display: flex;
+	align-items: center;
+
+	@include media($mobile-bp) {
+		display: none;
+	}
+}
+
+.nav__logo {
+	margin-right: 2rem;
+}
+.nav__list {
+	display: flex;
+	gap: 1.5rem;
+
+	@include media($mobile-bp) {
+		display: none;
+	}
+}
+
+.nav__link {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+
+	color: #0a143a;
+}
+
+.nav__right {
+	@include media($mobile-bp) {
+		display: none;
+	}
+}
+
+.nav__auth-sign {
+	background-color: transparent;
+	color: $primary;
+	padding: 1rem 0;
+
+	margin-right: 2.5rem;
+
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+
+	transition: 0.2s color ease-in-out;
+
+	&:hover {
+		color: lighten($primary, 30%);
+	}
+}
+
+.nav__auth-ads {
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+}

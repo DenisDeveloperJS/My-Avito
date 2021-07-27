@@ -1,0 +1,104 @@
+.user {
+	display: flex;
+	flex-direction: column;
+
+	margin-right: 13rem;
+
+	@include media($tablet-bp) {
+		margin-right: 0;
+		margin-bottom: 3rem;
+		flex-direction: row;
+	}
+
+	@include media($mobile-bp) {
+		flex-direction: column;
+	}
+}
+
+.user__description {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+
+	width: 26.5rem;
+}
+
+.user__description-wrapper {
+	flex-grow: 1;
+}
+
+.user__description-name {
+	font-weight: bold;
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+
+	color: $primary;
+
+	cursor: pointer;
+
+	@include media($tablet-bp) {
+		font-size: 1.7rem;
+	}
+}
+.user__description-reviews {
+	display: flex;
+}
+.user__description-reviews-stars {
+	margin-right: 1rem;
+
+	@include media($tablet-bp) {
+		font-size: 1.6rem;
+	}
+}
+
+.user__description-reviews-count {
+	font-size: 1.4rem;
+	line-height: 1.6rem;
+
+	color: $primary;
+
+	opacity: 0.5;
+
+	@include media($tablet-bp) {
+		align-self: center;
+		font-size: 1.5rem;
+	}
+}
+.user__description-type {
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+
+	color: $primary;
+
+	@include media($tablet-bp) {
+		font-size: 1.4rem;
+	}
+}
+.user__description-icon {
+	overflow: hidden;
+	align-self: flex-end;
+
+	position: relative;
+	bottom: 5.5rem;
+
+	border-radius: 50%;
+}
+.user__action {
+	max-width: 26.5rem;
+
+	@include media($tablet-bp) {
+		margin-left: 3rem;
+	}
+
+	@include media($mobile-bp) {
+		margin-left: 0;
+	}
+}
+.user__action__show-phone {
+	width: 100%;
+	margin-bottom: 1.5rem;
+}
+
+.user__action__message {
+	width: 100%;
+}
